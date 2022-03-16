@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        body{
+            padding-top: 8%;
+            padding-bottom: auto;
+        
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 30px;
+            margin-left: 30%;
+            margin-right: 30%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid; 
+            border-radius: 4px; 
+            box-sizing: border-box;
+            border-color: blueviolet;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 12px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            border-color: blueviolet;
+        }
+
+        .submit {
+            color: white;
+            background-color: blueviolet;
+            font-weight: bold;
+            font-size: small;
+        }
+        .row {
+            padding-bottom: 10px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row title" align="center">
+            Contact us form
+        </div>
+        <div class="column">
+            <div class="row">
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">            
+            </div>
+            <div class="row">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+            <div class="row">
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="row">
+                <input type="number" id="phone" name="phone" placeholder="Ph number">
+            </div>
+            <div class="row">
+                <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+            </div>
+
+            <div class="row">
+                <input type="submit" class="submit" value="Submit">
+            </div>
+        </div>
+    
+</div>
+</body>
+</html>

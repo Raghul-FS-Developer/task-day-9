@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mag-O-Zine</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            border: 3px solid black;
+            padding: 3px 10px;
+            width: 550px;
+            height: 400px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px 10px;
+            font-size: large;
+            background-color: crimson;
+            color: white
+        }
+
+        .brand {
+            font-size: large;
+            font-style: italic;
+        }
+
+        .field {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .field > div {
+            padding: 10px;
+            flex-basis: 100%;
+            
+            /* text-align: center; */
+        }
+        
+        input[type="text"] {
+            width: 100%;
+        }
+        input[type="checkbox"] {
+            padding-top: 10px
+        }
+        li{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+            Yes! I want to subscribe to <span class="brand">&nbsp;<b>Mag-O-Zine</b></span>
+        </div>
+        <div class="field">
+            <div>
+                <div><input type="text" id="firstName"/></div>
+                <label for="firstName">First Name</label>
+            </div>
+            <div>
+                <div><input type="text" id="lastName"/></div>
+                <label for="lastName">Last Name</label>
+            </div>
+        </div>
+        <div class="field">
+            <div>
+                <input type="text" id="address"/>
+                <label for="address">Address</label>
+            </div> 
+        </div>
+
+        <div class="field">
+            <div>
+                <div><input type="text" id="city"/></div>
+                <label for="city">City</label>
+            </div>  
+            <div>
+                <div><input type="text" id="state"/></div>
+                <label for="state">State</label>
+            </div>
+            <div>
+                <div><input type="text" id="zip"/></div>
+                <label for="zip">Zip</label>
+            </div>
+        </div>
+
+        <div class="field">
+            <div>
+                Subscribe for: 
+            </div>
+            <div>
+                <input id="year" type="checkbox"><label for="year">1 year ($19.95)</label> 
+            </div>
+            <div>
+                <input id="years" type="checkbox"><label for="years">2 years ($35.00)</label>
+            </div>
+        </div>
+        <div class="field" style="padding-bottom: 0">
+            <div style="padding-bottom: 0">Send me more information about</div>
+        </div>
+      
+            <ul style="list-style: none">
+                <li>
+                    <input id="computer" type="checkbox">
+                    <label for="computer">Computer Zine</label>
+                </li>
+                <li>
+                    <input id="fishing" type="checkbox">
+                    <label for="fishing">Fishing Zine</label>
+                </li>
+                <li>
+                    <input id="cat" type="checkbox">
+                    <label for="cat">Cat O Zine</label>
+                </li>
+            </ul>
+      
+    </div>
+</body>
+</html>

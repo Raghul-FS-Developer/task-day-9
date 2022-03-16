@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button</title>
+</head>
+<body>
+    <p>Choose your option: <div id="itype"></div></p>
+    <p><input oninput="setIncomeType();" type="radio" value="Salaried" name="incomeType" id="incomeType">
+        Salaried
+    </p>
+    <p><input oninput="setIncomeType();" type="radio" value="Own Business" name="incomeType" id="incomeType">
+        Own Business
+    </p>
+</body>
+<script type="text/javascript">
+function setIncomeType(){
+    document.getElementById('itype').innerHTML = 
+    `you selected <b>${document.querySelector('input[name="incomeType"]:checked').value}</b>`;
+}
+</script>
+</html>
